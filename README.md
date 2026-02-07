@@ -4,4 +4,4 @@ This is a translation of the PSP XMB menu for ES-DE. The xml and images were ori
 
 ## **Credits:**
 
-- The orignal XML and images for this theme was created by InitialDin
+- The orignal XML and images for this theme were created by InitialDin
