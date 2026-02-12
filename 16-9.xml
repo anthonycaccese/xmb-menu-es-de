@@ -15,7 +15,7 @@ based on 1920x1080
          <fontSize>${statusBarHeight}</fontSize>
       </clock>
       <systemstatus name="system-status">
-         <pos>${statusBarXRPos} ${statsBarYTPos}</pos>
+         <pos>0.9921875 ${statsBarYTPos}</pos><!-- 1905 -->
          <height>${statusBarHeight}</height>
          <textRelativeScale>0.9</textRelativeScale>
          <entrySpacing>0.0125</entrySpacing><!-- 25 -->
