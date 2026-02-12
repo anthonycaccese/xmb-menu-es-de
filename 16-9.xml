@@ -1,117 +1,167 @@
+<!-- 
+16:9 aspect ratio
+based on 1920x1080
+-->
 <theme>
-	<view name="system,gamelist">
-		<systemstatus name="system-status">
-			<pos>0.99020833 0.03111300</pos>
-		</systemstatus>
-		<clock name="clock">
-			<pos>0.020 0.03111300</pos>
-		</clock>
-		<helpsystem name="help-left,help-right">
-			<entrySpacing>0.00833333</entrySpacing>
-			<iconTextSpacing>0.00416667</iconTextSpacing>
-			<backgroundHorizontalPadding>0.0125 0.0125</backgroundHorizontalPadding>
-			<backgroundCornerRadius>0.018</backgroundCornerRadius>
-		</helpsystem>
-		<helpsystem name="help-left">
-			<pos>0.015 0.955</pos>
-		</helpsystem>
-		<helpsystem name="help-right">
-			<pos>0.975 0.955</pos>
-		</helpsystem>
-		<image name="line">
-			<pos>1.040 0.495</pos>
-		</image>
-		<image name="lineshadow">
-			<pos>1.040 0.499</pos>
-		</image>
-	</view>
-	<view name="system">
-		<carousel name="system-carousel">
-			<pos>0 0</pos>
-			<itemSize>0.100 0.18</itemSize>
-			<horizontalOffset>-0.268</horizontalOffset>
-			<maxItemCount>5</maxItemCount>
-		</carousel>
-		<text name="system-name">
-			<pos>0.390 0.483</pos>
-		</text>
-		<text name="system-name-shadow">
-			<pos>0.390 0.489</pos>
-		</text>
-		<text name="auto-name">
-			<pos>0.390 0.483</pos>
-		</text>
-		<text name="auto-name-shadow">
-			<pos>0.390 0.489</pos>
-		</text>
-		<text name="custom-name">
-			<pos>0.390 0.483</pos>
-		</text>
-		<text name="custom-name-shadow">
-			<pos>0.390 0.489</pos>
-		</text>
-		<text name="system-game-count">
-			<pos>0.535 0.540</pos>
-		</text>
-		<text name="games-total-indicator">
-			<pos>0.450 0.540</pos>
-		</text>
-		<image name="system-content">
-			<pos>0.175 0.400</pos>
-		</image>
-	</view>
-	<view name="gamelist">
-		<video name="video">
-			<pos>0.228 0.5</pos>
-			<cropSize>0.28 0.33</cropSize>
-		</video>
-		<text name="carousel-name,carousel-name-custom,carousel-name-shadow,carousel-name-custom-shadow">
-				<origin>0 1</origin>
-				<fontSize>0.054</fontSize>
-			</text>
-		<carousel name="game-carousel">
-			<pos>0.228 0.5</pos>
-			<itemSize>0.170 0.170</itemSize> 
-		</carousel>
-		<text name="carousel-name,carousel-name-custom">
-			<pos>0.390 0.483</pos>
-		</text>
-		<text name="carousel-name-shadow,carousel-name-custom-shadow">
-			<pos>0.390 0.489</pos>
-		</text>
-		<text name="textlist-players">
-			<pos>0.417 0.590</pos>
-		</text>
-		<text name="textlist-playtime">
-			<pos>0.417 0.634</pos>
-		</text>
-		<text name="textlist-playersshadow">
-			<pos>0.417 0.593</pos>
-		</text>
-		<text name="textlist-playtimeshadow">
-			<pos>0.417 0.637</pos>
-		</text>
-		<text name="custom-title">
-			<pos>0.390 0.483</pos>
-			<size>0.57 0.2</size>
-		</text>
-		<image name="arrow">
-			<pos>0.05 0.495</pos>
-		</image>
-		<image name="playtime">
-			<pos>0.400 0.579</pos>
-		</image>
-		<image name="playtimeshadow">
-			<pos>0.400 0.582</pos>
-		</image>
-		<image name="players">
-			<pos>0.400 0.535</pos>
-		</image>
-		<image name="playersshadow">
-			<pos>0.400 0.538</pos>
-		</image>
-		<image name="system-content">
-			<opacity>0</opacity>
-		</image>
-	</view>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,gamelist">
+      <clock name="clock">
+         <pos>${statusBarXLPos} ${statsBarYTPos}</pos>
+         <fontSize>${statusBarHeight}</fontSize>
+      </clock>
+      <systemstatus name="system-status">
+         <pos>${statusBarXRPos} ${statsBarYTPos}</pos>
+         <height>${statusBarHeight}</height>
+         <textRelativeScale>0.9</textRelativeScale>
+         <entrySpacing>0.0125</entrySpacing><!-- 25 -->
+      </systemstatus>
+      <helpsystem name="help-left,help-right">
+         <fontSize>${statusBarHeight}</fontSize>
+         <entryRelativeScale>0.9</entryRelativeScale>
+         <entrySpacing>0.0130208</entrySpacing><!-- 25 -->
+         <iconTextSpacing>0.0065104</iconTextSpacing><!-- 12.5 -->
+      </helpsystem>
+      <helpsystem name="help-left">
+         <pos>${statusBarXLPos} ${statsBarYBPos}</pos>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <pos>${statusBarXRPos} ${statsBarYBPos}</pos>
+      </helpsystem>
+      <image name="metadata-line">
+         <pos>0.39 0.5</pos>
+         <size>0.61 0.0037037</size>
+      </image>
+   </view>
+   <fontSize name="small,medium,large">
+      <variables>
+         <statusBarXLPos>0.0130208</statusBarXLPos><!-- 25 -->
+         <statusBarXRPos>0.9869792</statusBarXRPos><!-- 1895 -->
+         <statsBarYTPos>0.0231481</statsBarYTPos><!-- 25 -->
+         <statsBarYBPos>0.9768519</statsBarYBPos><!-- 1055 -->
+      </variables>
+   </fontSize>
+   <fontSize name="small">
+      <variables>
+         <statusBarHeight>0.0277778</statusBarHeight><!-- 30 -->
+      </variables>
+   </fontSize>
+   <fontSize name="medium">
+      <variables>
+         <statusBarHeight>0.037037</statusBarHeight><!-- 40 -->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <statusBarHeight>0.0462963</statusBarHeight><!-- 50 -->
+      </variables>
+   </fontSize>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <carousel name="system-carousel">
+         <pos>0 0.1259259</pos><!-- 0 136 -->
+         <size>1 0.2314815</size><!-- 100% 250 -->
+         <itemSize>0.1083333 0.1925926</itemSize><!-- 208 208 -->
+         <itemScale>1.2</itemScale>
+         <horizontalOffset>-0.275</horizontalOffset>
+         <maxItemCount>5</maxItemCount>
+      </carousel>
+      <text name="system-name">
+         <pos>0.39 0.475</pos>
+         <size>0.61 0</size>
+         <fontSize>0.05</fontSize><!-- 54 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <text name="system-count">
+         <pos>0.39 0.525</pos>
+         <size>0.61 0</size>
+         <fontSize>0.04</fontSize>
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <image name="system-content">
+         <pos>0.225 0.4916667</pos><!-- 576 531 -->
+         <maxSize>0.1302083 0.2314815</maxSize><!-- 250 250 -->
+      </image>
+      <helpsystem name="help-left">
+         <entries>start</entries>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <entries>a</entries>
+      </helpsystem>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="gamelist">
+      <carousel name="gamelist-carousel">
+         <pos>0.225 0</pos><!-- 576 0 -->
+         <size>1 1</size>
+         <itemSize>0.140 0.170</itemSize> 
+         <itemScale>1.9</itemScale>
+         <selectedItemMargins>0.04 0.04</selectedItemMargins>
+         <imageCornerRadius>0.005</imageCornerRadius>
+         <fontSize>0.0222222</fontSize><!-- 24 -->
+         <lineSpacing>1.2</lineSpacing>
+         <textBackgroundCornerRadius>0.005</textBackgroundCornerRadius>
+         <textRelativeScale>0.8</textRelativeScale>
+         <maxItemCount>5</maxItemCount>
+      </carousel>
+      <image name="back-arrow">
+         <pos>0.05 0.5</pos>
+         <maxSize>0.1 0.1</maxSize>
+      </image>
+      <video name="game-video">
+         <pos>0.225 0.5</pos>
+         <cropSize>0.28 0.33</cropSize> 
+      </video>
+      <text name="game-name">
+         <pos>0.39 0.475</pos>
+         <size>0.56 0</size>
+         <fontSize>0.05</fontSize><!-- 54 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <badges name="game-badges">
+         <pos>0.95 0.5</pos>
+         <size>1 0.06</size>
+      </badges>
+      <image name="game-players-icon">
+         <pos>0.39 0.525</pos>
+         <size>0.0229167 0.0407407</size><!-- 44 44 -->
+      </image>
+      <text name="game-players">
+         <pos>0.425 0.525</pos>
+         <fontSize>0.0333333</fontSize><!-- 36 -->
+         <size>0 0.0333333</size><!-- 0 36 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <image name="game-playtime-icon">
+         <pos>0.39 0.575</pos>
+         <size>0.0229167 0.0407407</size><!-- 44 44 -->
+      </image>
+      <text name="game-playtime">
+         <pos>0.425 0.575</pos>
+         <fontSize>0.0333333</fontSize><!-- 36 -->
+         <size>0 0.0333333</size><!-- 0 36 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <helpsystem name="help-left">
+         <entries>b</entries>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <entries>a,x</entries>
+      </helpsystem>
+   </view>
+
 </theme>

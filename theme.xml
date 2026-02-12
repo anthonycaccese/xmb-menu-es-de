@@ -1,572 +1,332 @@
+<!--
+theme name:    XMB Menu
+author:        InitialDin & Ant
+license:       creative commons CC-BY-NC-SA
+https://github.com/anthonycaccese/basic-xmb-es-de
+-->
 <theme>
 
+   <!--
+   ///
+   Variables
+   ///
+   -->
 	<variables>
-		<fontMedium>./_inc/fonts/newrodinpro.ttf</fontMedium>
-		<langLabelTotalGames>Total Games</langLabelTotalGames>
-		<artworkFolder>./_inc/systems/controller/${system.theme}.png</artworkFolder>
-		<fallbackSystem>./_inc/systems/controller/_default_sys.png</fallbackSystem>
-		<fallbackGame>./_inc/systems/controller/_default_game.png</fallbackGame>
-		<systemBackground>./_inc/waves/waves-static.png</systemBackground>
-		<wallpaper>./_inc/images/wallpaper.png</wallpaper>
+      <fontLight>./_inc/fonts/FOT-NewRodin Pro L.otf</fontLight>
+      <fontRegular>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontRegular>
+		<fontBold>./_inc/fonts/FOT-NewRodin Pro B.otf</fontBold>
+      <spacerImage>./_inc/images/space.png</spacerImage>
 	</variables>
-	
-	<colorScheme name="default">
-		<variables>
-			<grey>e0e0e0</grey>
-			<white>ffffff</white>
-			<fade>727272</fade>
-			<fade2>c7c7c7</fade2>
-			</variables>
-    </colorScheme>
-    
-    <aspectRatio name="16:9">
-		<include>./16-9.xml</include>
-	</aspectRatio>
-	<aspectRatio name="16:10">
-		<include>./16-10.xml</include>
-	</aspectRatio>
-	<aspectRatio name="4:3">
-		<include>./4-3.xml</include>
-	</aspectRatio>
-	<aspectRatio name="20:9">
-		<include>./20-9.xml</include>
-	</aspectRatio>
-	
-	<view name="system,gamelist">
-		<helpsystem name="help-left,help-right">
-			<fontSize>0.026</fontSize>
-			<fontPath>${fontMedium}</fontPath>
-			<letterCase>capitalize</letterCase>
-			<iconColor>${grey}</iconColor>
-			<textColor>${grey}</textColor>
-			<scope>view</scope>
-		</helpsystem>
-		<helpsystem name="help-left">
-			<origin>0 0</origin>
-		</helpsystem>
-		<helpsystem name="help-right">
-			<origin>1 0</origin>
-		</helpsystem>
-		<helpsystem name="help-menu">
-			<origin>1 0</origin>
-			<pos>0.975 0.925</pos>
-			<fontSize>0.026</fontSize>
-			<fontSizeDimmed>0.026</fontSizeDimmed>
-			<fontPath>${fontMedium}</fontPath>
-			<letterCase>capitalize</letterCase>
-			<originDimmed>0.5 0</originDimmed>
-			<posDimmed>0.5 0.94</posDimmed>
-			<textColorDimmed>${grey}</textColorDimmed>
-			<iconColorDimmed>${grey}</iconColorDimmed>
-			<opacityDimmed>1.0</opacityDimmed>
-			<scope>menu</scope>
-			<entries>start,a,b</entries>
-		</helpsystem>
-		<systemstatus name="system-status">
-			<fontPath>${fontMedium}</fontPath>
-			<height>0.042</height>
-			<color>${grey}</color>
-			<textRelativeScale>0.625</textRelativeScale>
-			<scope>view</scope>
-			<customIcon icon="icon_battery_charging">./_inc/images/battery_high.png</customIcon>
-			<customIcon icon="icon_battery_low">./_inc/images/battery_low.png</customIcon>
-			<customIcon icon="icon_battery_medium">./_inc/images/battery_medium.png</customIcon>
-			<customIcon icon="icon_battery_high">./_inc/images/battery_high.png</customIcon>
-			<customIcon icon="icon_battery_full">./_inc/images/battery_high.png</customIcon>
-		</systemstatus>
-		<clock name="clock">
-			<fontPath>${fontMedium}</fontPath>
-			<fontSize>0.028</fontSize>
-			<color>${grey}</color>
-			<horizontalAlignment>center</horizontalAlignment>
-			<scope>view</scope>
-		</clock>
-		<image name="line">
-			<path>./_inc/images/line.png</path>
-			<origin>0.5 0.5</origin>
-			<maxSize>1.3 1.3</maxSize>
-			<metadataElement>true</metadataElement>
-			<opacity>1</opacity>
-			<zIndex>5</zIndex>
-		</image>
-		<image name="lineshadow">
-			<path>./_inc/images/line.png</path>
-			<origin>0.5 0.5</origin>
-			<maxSize>1.3 1.3</maxSize>
-			<metadataElement>true</metadataElement>
-			<color>00000033</color>
-			<opacity>0.5</opacity>
-			<zIndex>4</zIndex>
-		</image>
-		<image name="background-static">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<path>${systemBackground}</path>
-			<color>${fade2}</color>
-			<zIndex>1.8</zIndex>
-         </image>
+   <include>./colors.xml</include>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,gamelist">
+      <!-- Start: menu styling resets -->
+      <helpsystem name="help-menu-view">
+         <scope>menu</scope>
+         <origin>0.5 1</origin>
+         <pos>0.5 0.9875</pos>
+         <iconColor>cccccc</iconColor>
+         <textColor>cccccc</textColor>
+         <backgroundColor>181818</backgroundColor>
+         <backgroundHorizontalPadding>0.01 0.01</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.015 0.02</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+         <entryRelativeScale>0.9</entryRelativeScale>
+      </helpsystem>
+      <!-- End: menu styling resets -->
+      <image name="background-image">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <cropSize>1 1</cropSize>
+         <path>${backgroundImage}</path>
+         <tile>${backgroundImageTile}</tile>
+         <color>${backgroundImageColor}</color>
+         <saturation>${backgroundImageSaturation}</saturation>
+         <zIndex>0</zIndex>
+      </image>
+      <video name="background-video">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <cropSize>1 1</cropSize>
+         <path>${backgroundVideo}</path>
+         <color>${backgroundVideoColor}</color>
+         <fadeInTime>0</fadeInTime>
+         <audio>false</audio>
+         <zIndex>1</zIndex>
+         <stationary>always</stationary>
+         <visible>${showBackgroundVideo}</visible>
+      </video>
+      <image name="background-game-art">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <cropSize>1 1</cropSize>
+         <color>${backgroundGameArtColor}</color>
+         <saturation>${backgroundGameArtSaturation}</saturation>
+         <zIndex>2</zIndex>
+         <visible>false</visible>
+      </image>
+      <clock name="clock">
+         <origin>0 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <color>${textColor}</color>
+      </clock>
+      <systemstatus name="system-status">
+         <origin>1 0</origin>
+         <fontPath>${fontRegular}</fontPath>
+         <customIcon icon="icon_bluetooth">./_inc/images/icon-bluetooth.svg</customIcon>
+         <customIcon icon="icon_wifi">./_inc/images/icon-wifi.svg</customIcon>
+         <customIcon icon="icon_cellular">./_inc/images/icon-cellular.svg</customIcon>
+         <customIcon icon="icon_battery_charging">./_inc/images/icon-battery-charging.svg</customIcon>
+         <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
+         <customIcon icon="icon_battery_medium">./_inc/images/icon-battery-medium.svg</customIcon>
+         <customIcon icon="icon_battery_high">./_inc/images/icon-battery-high.svg</customIcon>
+         <customIcon icon="icon_battery_full">./_inc/images/icon-battery-full.svg</customIcon>
+         <color>${iconColor}</color>
+      </systemstatus>
+      <helpsystem name="help-left,help-right">
+         <fontPath>${fontRegular}</fontPath>
+         <letterCase>capitalize</letterCase>
+         <iconColor>${iconColor}</iconColor>
+         <textColor>${textColor}</textColor>
+         <customButtonIcon button="button_a_PS">./_inc/images/help-button-a-PS.svg</customButtonIcon>
+         <customButtonIcon button="button_a_XBOX">./_inc/images/help-button-a-XBOX.svg</customButtonIcon>
+         <customButtonIcon button="button_start_PS123">./_inc/images/help-button-start-PS123.svg</customButtonIcon>
+         <customButtonIcon button="button_start_XBOX">./_inc/images/help-button-start-XBOX.svg</customButtonIcon>
+         <customButtonIcon button="button_b_XBOX">./_inc/images/help-button-b-XBOX.svg</customButtonIcon>
+         <customButtonIcon button="button_x_XBOX">./_inc/images/help-button-x-XBOX.svg</customButtonIcon>
+         <scope>view</scope>
+      </helpsystem>
+      <helpsystem name="help-left">
+         <origin>0 1</origin>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <origin>1 1</origin>
+      </helpsystem>
+      <image name="metadata-line">
+         <origin>0 0.5</origin>
+         <path>${spacerImage}</path>
+         <color>${lineColor}</color>
+         <metadataElement>true</metadataElement>
+         <zIndex>5</zIndex>
+      </image>
 	</view>
-	<view name="system">
-		<image name="system-background">
-			<stationary>always</stationary>
-		</image>
-	</view>
-	<view name="gamelist">
-		<image name="system-background">
-			<renderDuringTransitions>true</renderDuringTransitions>
-		</image>
-	</view>
-	
-	
-	<variant name="bg-lastplayed-waves-cover">
-		<view name="system">
-		<gameselector name="system-art-selector">
-            <selection>lastplayed</selection>
-        </gameselector>
-         <image name="lastplayedbackground">
-            <pos>0 0</pos>
-            <cropSize>1 1</cropSize>
-            <imageType>fanart</imageType>
-            <color>${fade}</color>
-            <gameselector>system-art-selector</gameselector>
-            <zIndex>2</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	<variant name="bg-lastplayed-waves-marquee">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>marquee</imageType>
-			<itemScale>1.585</itemScale>
-			<unfocusedItemOpacity>0.6</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.6</unfocusedItemDimming>
-		</carousel>
-		<image name="marquee">
-			<visible>false</visible>
-		</image>
-         </view>
-         <view name="system">
-		<gameselector name="system-art-selector">
-            <selection>lastplayed</selection>
-        </gameselector>
-         <image name="lastplayedbackground">
-            <pos>0 0</pos>
-            <cropSize>1 1</cropSize>
-            <imageType>fanart</imageType>
-            <color>${fade}</color>
-            <gameselector>system-art-selector</gameselector>
-            <zIndex>2</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	<variant name="bg-lastplayed-waves-titlescreen">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>titlescreen</imageType>
-			<itemScale>1.585</itemScale>
-		</carousel>
-		<text name="carousel-name,carousel-name-shadow">
-			<visible>false</visible>
-		</text>
-		<image name="line,lineshadow">
-			<visible>false</visible>
-		</image>
-         </view>
-         <view name="system">
-		<gameselector name="system-art-selector">
-            <selection>lastplayed</selection>
-        </gameselector>
-         <image name="lastplayedbackground">
-            <pos>0 0</pos>
-            <cropSize>1 1</cropSize>
-            <imageType>fanart</imageType>
-            <color>${fade}</color>
-            <gameselector>system-art-selector</gameselector>
-            <zIndex>2</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	<variant name="bg-waves-marquee">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>marquee</imageType>
-			<itemScale>1.585</itemScale>
-			<unfocusedItemOpacity>0.6</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.6</unfocusedItemDimming>
-		</carousel>
-		<image name="marquee">
-			<visible>false</visible>
-		</image>
-         </view>
-	</variant>
-	
-	<variant name="bg-waves-titlescreen">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>titlescreen</imageType>
-			<itemScale>1.585</itemScale>
-		</carousel>
-		<text name="carousel-name,carousel-name-shadow">
-			<visible>false</visible>
-		</text>
-		<image name="line,lineshadow">
-			<visible>false</visible>
-		</image>
-         </view>
-	</variant>
-	
-	<variant name="bg-wallpaper-cover">
-		<view name="system,gamelist">
-		<image name="background-static">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<path>${wallpaper}</path>
-			<zIndex>1.9</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	<variant name="bg-wallpaper-marquee">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>marquee</imageType>
-			<itemScale>1.585</itemScale>
-			<unfocusedItemOpacity>0.6</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.6</unfocusedItemDimming>
-		</carousel>
-		<image name="marquee">
-			<visible>false</visible>
-		</image>
-         </view>
-		<view name="system,gamelist">
-		<image name="background-static">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<path>${wallpaper}</path>
-			<zIndex>1.9</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	<variant name="bg-wallpaper-titlescreen">
-		<view name="gamelist">
-		<carousel name="game-carousel">
-			<imageType>titlescreen</imageType>
-			<itemScale>1.585</itemScale>
-		</carousel>
-		<text name="carousel-name,carousel-name-shadow">
-			<visible>false</visible>
-		</text>
-		<image name="line,lineshadow">
-			<visible>false</visible>
-		</image>
-         </view>
-		<view name="system,gamelist">
-		<image name="background-static">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<path>${wallpaper}</path>
-			<zIndex>1.9</zIndex>
-         </image>
-         </view>
-	</variant>
-	
-	
-	<view name="system">
-		<carousel name="system-carousel">
-			<origin>0 0.240</origin>
-			<size>1 1</size>
-			<type>verticalcarousel</type>
-			<unfocusedItemOpacity>0.9</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.9</unfocusedItemDimming>
-			<itemScale>1.2</itemScale>
-			<defaultImage>${fallbackSystem}</defaultImage>
-			<staticImage>${artworkFolder}</staticImage>
-			<imageCornerRadius>0.00</imageCornerRadius>
-			<fastScrolling>false</fastScrolling>
-			<color>00000000</color>
-			<textColor>${grey}</textColor>
-			<textBackgroundColor>33333340</textBackgroundColor>
-			<fontSize>0.045</fontSize>
-			<selectedItemMargins>0 0</selectedItemMargins>
-		</carousel>
-		<text name="system-name,system-name-shadow,auto-name,auto-name-shadow,custom-name,custom-name-shadow">
-			<origin>0 1</origin>
-			<size>0.63 0</size>
-			<fontSize>0.054</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<horizontalAlignment>left</horizontalAlignment>
-			<verticalAlignment>bottom</verticalAlignment>
-			<container>true</container>
-			<containerType>horizontal</containerType>
-			<fontPath>${fontMedium}</fontPath>
-		</text>
-		<text name="system-name,system-name-shadow">
-			<text>${system.fullName.noCollections}</text>
-            <letterCase>none</letterCase>
-		</text>
-		<text name="system-name">
-			<color>${white}</color>
-		</text>
-		<text name="system-name-shadow">
-			<color>00000033</color>
-			<zIndex>5</zIndex>
-		</text>
-		<text name="auto-name,auto-name-shadow">
-			<text>${system.fullName.autoCollections}</text>
-            <letterCase>capitalize</letterCase>
-		</text>
-		<text name="auto-name">
-			<color>${white}</color>
-		</text>
-		<text name="auto-name-shadow">
-			<color>00000033</color>
-			<zIndex>5</zIndex>
-		</text>
-		<text name="custom-name,custom-name-shadow">
-			<text>${system.fullName.customCollections}</text>
-            <letterCase>none</letterCase>
-		</text>
-		<text name="custom-name">
-			<color>${white}</color>
-		</text>
-		<text name="custom-name-shadow">
-			<color>00000033</color>
-			<zIndex>5</zIndex>
-		</text>
-		<text name="system-game-count">
-			<origin>0.5 0.5</origin>
-			<fontSize>0.03</fontSize> 
-			<fontPath>${fontMedium}</fontPath>
-			<horizontalAlignment>left</horizontalAlignment>
-			<systemdata>gamecountGamesNoText</systemdata>
-			<color>${grey}</color>
-		</text>
-		<text name="games-total-indicator">
-			<origin>0.5 0.5</origin>
-			<size>0.45 0.2</size>
-			<fontSize>0.030</fontSize>
-			<lineSpacing>1.1</lineSpacing>
-			<horizontalAlignment>center</horizontalAlignment>
-			<verticalAlignment>center</verticalAlignment>
-			<fontPath>${fontMedium}</fontPath>
-			<text>${langLabelTotalGames}</text>
-			<color>${grey}</color>
-		</text>
-		<image name="system-content">
-			<origin>0 0</origin>
-			<maxSize>0.2 0.2</maxSize>
-			<path>./_inc/systems/content/${system.theme}.png</path>
-			<default>./_inc/systems/content/_default.png</default>
-			<interpolation>linear</interpolation>
-		</image>
-		<helpsystem name="help-left">
-			<entries>start</entries>
-		</helpsystem>
-		<helpsystem name="help-right">
-			<entries>a</entries>
-		</helpsystem>
-	</view>
-	
-	<view name="gamelist">
-		<image name="background-art">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<imageType>fanart</imageType>
-			<zIndex>2</zIndex>
-			<scrollFadeIn>false</scrollFadeIn>
-			<color>${fade}</color>
-		</image>
-		<carousel name="game-carousel">
-			<origin>0.5 0.5</origin>
-			<size>1 1</size>
-			<type>vertical</type>
-			<unfocusedItemOpacity>0.9</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.9</unfocusedItemDimming>
-			<imageType>cover</imageType>
-			<zIndex>3</zIndex>
-			<imageCornerRadius>0.005</imageCornerRadius>
-			<defaultImage>${fallbackGame}</defaultImage>
-			<defaultFolderImage>${fallbackSystem}</defaultFolderImage>
-			<fastScrolling>true</fastScrolling>
-			<color>00000000</color>
-			<textColor>${grey}</textColor>
-			<textBackgroundColor>33333340</textBackgroundColor>
-			<fontSize>0.03</fontSize>
-			<itemScale>1.9</itemScale>
-			<maxItemCount>5</maxItemCount>
-			<selectedItemMargins>0.04 0.04</selectedItemMargins>
-			<selectedItemOffset>0 0</selectedItemOffset>
-			<imageInterpolation>nearest</imageInterpolation>
-		</carousel>
-		<image name="marquee">
-			<origin>0.5 0.5</origin>
-			<pos>0.788 0.750</pos>
-			<maxSize>0.370 0.370</maxSize>
-			<imageType>marquee</imageType>
-			<scrollFadeIn>true</scrollFadeIn>
-		</image>
-		<image name="arrow">
-			<path>./_inc/images/arrow.png</path>
-			<origin>0.5 0.5</origin>
-			<maxSize>0.1 0.1</maxSize>
-			<metadataElement>true</metadataElement>
-			<opacity>1</opacity>
-			<zIndex>4</zIndex>
-		</image>
-		<text name="textlist-players,textlist-playtime,textlist-playersshadow,textlist-playtimeshadow">
-			<origin>0 0.5</origin>
-			<fontSize>0.026</fontSize>
-			<fontPath>${fontMedium}</fontPath>
-			<opacity>1</opacity>
-			<horizontalAlignment>left</horizontalAlignment>
-			<verticalAlignment>top</verticalAlignment>
-			<metadataElement>true</metadataElement>
-			<color>${grey}</color>
-		</text>
-		<text name="textlist-playtime">
-			<size>0.45 0.16</size>
-			<metadata>playtime</metadata>
-		</text>
-		<text name="textlist-players">
-			<size>0.45 0.16</size>
-			<metadata>players</metadata>
-			<defaultValue>??</defaultValue>
-		</text>
-		<text name="textlist-playtimeshadow">
-			<size>0.45 0.16</size>
-			<color>000000</color>
-			<opacity>0.5</opacity>
-			<metadata>playtime</metadata>
-			<zIndex>4</zIndex>
-		</text>
-		<text name="textlist-playersshadow">
-			<size>0.45 0.16</size>
-			<color>000000</color>
-			<opacity>0.5</opacity>
-			<metadata>players</metadata>
-			<defaultValue>??</defaultValue>
-			<zIndex>4</zIndex>
-		</text>
-		<image name="playtime">
-			<path>./_inc/images/playtime.png</path>
-			<origin>0.5 0.5</origin>
-			<metadataElement>true</metadataElement>
-			<maxSize>0.1 0.1</maxSize>
-			<opacity>1</opacity>
-			<zIndex>5</zIndex>
-		</image>
-		<image name="playtimeshadow">
-			<path>./_inc/images/playtime.png</path>
-			<origin>0.5 0.5</origin>
-			<metadataElement>true</metadataElement>
-			<maxSize>0.1 0.1</maxSize>
-			<opacity>0.5</opacity>
-			<color>000000</color>
-			<zIndex>4</zIndex>
-		</image>
-		<image name="players">
-			<path>./_inc/images/players.png</path>
-			<origin>0.5 0.5</origin>
-			<maxSize>0.1 0.1</maxSize>
-			<metadataElement>true</metadataElement>
-			<opacity>1</opacity>
-			<zIndex>5</zIndex>
-		</image>
-		<image name="playersshadow">
-			<path>./_inc/images/players.png</path>
-			<origin>0.5 0.5</origin>
-			<metadataElement>true</metadataElement>
-			<maxSize>0.1 0.1</maxSize>
-			<opacity>0.5</opacity>
-			<color>000000</color>
-			<zIndex>4</zIndex>
-		</image>
-		<video name="video">
-			<origin>0.5 0.5</origin>
-			<imageType>none</imageType>
-			<delay>2</delay>
-			<fadeInType>transparent</fadeInType>
-			<fadeInTime>0.3</fadeInTime>
-			<videoCornerRadius>0.005</videoCornerRadius>
-			<imageCornerRadius>0.005</imageCornerRadius>
-			<pillarboxes>true</pillarboxes>
-			<zIndex>5</zIndex>
-		</video>
-		<text name="carousel-name,carousel-name-shadow">
-			<lineSpacing>1.1</lineSpacing>
-			<size>0.63 0</size>
-			<horizontalAlignment>left</horizontalAlignment>
-			<verticalAlignment>bottom</verticalAlignment>
-			<container>true</container>
-			<containerType>horizontal</containerType>
-			<systemNameSuffix>false</systemNameSuffix>
-			<color>${white}</color>
-			<opacity>0.9</opacity>
-			<fontPath>${fontMedium}</fontPath>
-			<metadata>name</metadata>
-		</text>
-		<text name="carousel-name-shadow">
-			<color>000000</color>
-			<opacity>0.5</opacity>
-			<zIndex>5</zIndex>
-		</text>
-		<helpsystem name="help-left">
-			<entries>b</entries>
-		</helpsystem>
-		<helpsystem name="help-right">
-			<entries>start,back,x,y,a</entries>
-		</helpsystem>
-		<image name="system-content">
-			<origin>0 0</origin>
-			<path>./_inc/systems/content/${system.theme}.png</path>
-			<default>./_inc/systems/content/_default.png</default>
-			<interpolation>linear</interpolation>
-		</image>
-		<text name="custom-title">
-			<fontPath>${fontMedium}</fontPath>
-			<fontSize>0.02</fontSize>
-			<color>${white}</color>
-			<horizontalAlignment>center</horizontalAlignment>
-		</text>
-	</view>
-	
-	
-	<language name="en_US">
-		<variables>
-			<langLabelTotalGames>Total Games</langLabelTotalGames>
-		</variables>
-	</language>
-	
-	<view name="all">
-		<sound name="systembrowse">
-			<path>./_inc/sounds/systembrowse.wav</path>
-		</sound>
-		<sound name="quicksysselect">
-			<path>./_inc/sounds/quicksysselect.wav</path>
-		</sound>
-		<sound name="select">
-			<path>./_inc/sounds/select.wav</path>
-		</sound>
-		<sound name="back">
-			<path>./_inc/sounds/back.wav</path>
-		</sound>
-		<sound name="scroll">
-			<path>./_inc/sounds/scroll.wav</path>
-		</sound>
-		<sound name="favorite">
-			<path>./_inc/sounds/favorite.wav</path>
-		</sound>
-		<sound name="launch">
-			<path>./_inc/sounds/launch.wav</path>
-		</sound>
-	</view>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <image name="background-game-art">
+         <imageType>${backgroundGameArtType}</imageType>
+         <gameselector>background-game-art-selector</gameselector>
+         <visible>${showBackgroundGameArtSystem}</visible>
+      </image>
+      <gameselector name="background-game-art-selector">
+         <selection>${backgroundGameArtSelector}</selection>
+      </gameselector>
+      <carousel name="system-carousel">
+         <origin>0 0</origin>
+         <type>horizontal</type>
+         <defaultImage>./_inc/systems/controller/_default.png</defaultImage>
+         <staticImage>./_inc/systems/controller/${system.theme}.png</staticImage>
+         <imageColor>${iconColor}</imageColor>
+         <unfocusedItemOpacity>0.9</unfocusedItemOpacity>
+         <fastScrolling>true</fastScrolling>
+         <color>00000000</color>
+      </carousel>
+      <image name="system-content">
+         <origin>0.5 0.5</origin>
+         <default>./_inc/systems/physical-media/_default.png</default>
+         <path>./_inc/systems/physical-media/${system.theme}.png</path>
+         <color>${iconColor}</color>
+      </image>
+      <text name="system-name">
+         <origin>0 1</origin>
+         <systemdata>fullname</systemdata>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+      </text>
+      <text name="system-count">
+         <origin>0 0</origin>
+         <systemdata>gamecountGames</systemdata>
+         <fontPath>${fontRegular}</fontPath>
+         <color>${textColor}</color>
+         <letterCase>capitalize</letterCase>
+      </text>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="gamelist">
+      <image name="background-game-art">
+         <imageType>${backgroundGameArtType}</imageType>
+         <visible>${showBackgroundGameArtGamelist}</visible>
+      </image>
+      <carousel name="gamelist-carousel">
+         <origin>0.5 0</origin>
+         <type>vertical</type>
+         <!--<defaultImage>./_inc/images/default_game.png</defaultImage>
+         <defaultFolderImage>./_inc/images/default_game.png</defaultFolderImage>-->
+         <unfocusedItemOpacity>0.9</unfocusedItemOpacity>
+         <textColor>${textColor}</textColor>
+         <textBackgroundColor>111111</textBackgroundColor>
+         <fontPath>${fontBold}</fontPath>
+         <color>00000000</color>
+         <fastScrolling>true</fastScrolling>
+      </carousel>
+      <image name="back-arrow">
+         <origin>0.5 0.5</origin>
+         <path>./_inc/images/icon-arrow.svg</path>
+         <color>${iconColor}</color>
+         <metadataElement>true</metadataElement>
+         <zIndex>50</zIndex>
+      </image>
+      <video name="game-video">
+         <origin>0.5 0.5</origin>
+         <imageType>none</imageType>
+         <delay>2</delay>
+         <fadeInType>transparent</fadeInType>
+         <fadeInTime>0.3</fadeInTime>
+         <iterationCount>1</iterationCount>
+         <videoCornerRadius>0.005</videoCornerRadius>
+         <zIndex>50</zIndex>
+      </video>
+      <text name="game-name">
+         <origin>0 1</origin>
+         <metadata>name</metadata>
+         <fontPath>${fontBold}</fontPath>
+         <color>${textColor}</color>
+         <systemNameSuffix>false</systemNameSuffix>
+         <zIndex>50</zIndex>
+      </text>
+      <badges name="game-badges">
+         <origin>1 0</origin>
+         <horizontalAlignment>right</horizontalAlignment>
+         <direction>row</direction>
+         <lines>1</lines>
+         <itemMargin>-1 0.004</itemMargin><!-- 24 -->
+         <slots>collection,folder,favorite,completed</slots>
+         <badgeIconColor>${iconColor}</badgeIconColor>
+         <customBadgeIcon badge="collection">./_inc/images/badge-collection.svg</customBadgeIcon>
+         <customBadgeIcon badge="folder">./_inc/images/badge-folder.svg</customBadgeIcon>
+         <customBadgeIcon badge="favorite">./_inc/images/badge-favorite.svg</customBadgeIcon>
+         <customBadgeIcon badge="completed">./_inc/images/badge-completed.svg</customBadgeIcon>
+      </badges>
+      <image name="game-players-icon">
+         <origin>0 0</origin>
+         <path>./_inc/images/icon-players.svg</path>
+         <color>${iconColor}</color>
+         <metadataElement>true</metadataElement>
+         <zIndex>50</zIndex>
+      </image>
+      <text name="game-players">
+         <origin>0 0</origin>
+         <metadata>players</metadata>
+         <defaultValue>Unknown</defaultValue>
+         <fontPath>${fontRegular}</fontPath>
+         <color>${textColor}</color>
+         <zIndex>50</zIndex>
+      </text>
+      <image name="game-playtime-icon">
+         <origin>0 0</origin>
+         <path>./_inc/images/icon-playtime.svg</path>
+         <color>${iconColor}</color>
+         <metadataElement>true</metadataElement>
+         <zIndex>50</zIndex>
+      </image>
+      <text name="game-playtime">
+         <origin>0 0</origin>
+         <metadata>playtime</metadata>
+         <defaultValue>Never Played</defaultValue>
+         <fontPath>${fontRegular}</fontPath>
+         <color>${textColor}</color>
+         <letterCase>capitalize</letterCase>
+         <zIndex>50</zIndex>
+      </text>
+   </view>
+   <variant name="gamelist-carousel-cover">
+      <view name="gamelist">
+         <carousel name="gamelist-carousel">
+            <imageType>cover</imageType>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="gamelist-carousel-marquee">
+      <view name="gamelist">
+         <carousel name="gamelist-carousel">
+            <imageType>marquee</imageType>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="gamelist-carousel-titlescreen">
+      <view name="gamelist">
+         <carousel name="gamelist-carousel">
+            <imageType>titlescreen</imageType>
+         </carousel>
+      </view>
+   </variant>
+   <variant name="gamelist-carousel-physicalmedia">
+      <view name="gamelist">
+         <carousel name="gamelist-carousel">
+            <imageType>physicalmedia</imageType>
+         </carousel>
+      </view>
+   </variant>
+
+   <!--
+   ///
+   Aspect Ratios
+   ///
+   -->
+   <aspectRatio name="16:9">
+      <include>./16-9.xml</include>
+   </aspectRatio>
+   <aspectRatio name="16:10">
+      <include>./16-10.xml</include>
+   </aspectRatio>
+   <aspectRatio name="4:3">
+      <include>./4-3.xml</include>
+   </aspectRatio>
+   <aspectRatio name="20:9">
+      <include>./20-9.xml</include>
+   </aspectRatio>
+
+   <!--
+   ///
+   Sounds
+   ///
+   -->
+   <view name="all">
+      <sound name="systembrowse">
+         <path>./_inc/sounds/systembrowse.wav</path>
+      </sound>
+      <sound name="quicksysselect">
+         <path>./_inc/sounds/quicksysselect.wav</path>
+      </sound>
+      <sound name="select">
+         <path>./_inc/sounds/select.wav</path>
+      </sound>
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="scroll">
+         <path>./_inc/sounds/scroll.wav</path>
+      </sound>
+      <sound name="favorite">
+         <path>./_inc/sounds/favorite.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+   </view>
+
 </theme>

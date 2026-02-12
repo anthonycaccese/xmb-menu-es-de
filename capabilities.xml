@@ -1,76 +1,173 @@
 <themeCapabilities>
    
-	<themeName>BasicXMB</themeName>
-	
-	<aspectRatio>16:9</aspectRatio>
-	<aspectRatio>16:10</aspectRatio>
-	<aspectRatio>4:3</aspectRatio>
-	<aspectRatio>20:9</aspectRatio>
-	
-	<variant name="bg-lastplayed-waves-cover">
-		<label>BG-Last Played (Waves) | Gamelist-Cover</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-lastplayed-waves-marquee">
-		<label>BG-Last Played (Waves) | Gamelist-Marquee</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-lastplayed-waves-titlescreen">
-		<label>BG-Last Played (Waves) | Gamelist-Titlescreen</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-waves-cover">
-		<label>BG-Waves | Gamelist-Cover</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-waves-marquee">
-		<label>BG-Waves | Gamelist-Marquee</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-waves-titlescreen">
-		<label>BG-Waves | Gamelist-Titlescreen</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-wallpaper-cover">
-		<label>BG-Wallpaper | Gamelist-Cover</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-wallpaper-marquee">
-		<label>BG-Wallpaper | Gamelist-Marquee</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<variant name="bg-wallpaper-titlescreen">
-		<label>BG-Wallpaper | Gamelist-Titlescreen</label>
-		<selectable>true</selectable>
-	</variant>
-	
-	<transitions name="transitions">
-		<label>transitions</label>
-		<selectable>false</selectable>
-		<systemToSystem>instant</systemToSystem>
-		<systemToGamelist>instant</systemToGamelist>
-		<gamelistToGamelist>instant</gamelistToGamelist>
-		<gamelistToSystem>instant</gamelistToSystem>
-		<startupToSystem>fade</startupToSystem>
-		<startupToGamelist>fade</startupToGamelist>
-	</transitions>
-	<suppressTransitionProfiles>
-		<entry>builtin-instant</entry>
-		<entry>builtin-slide</entry>
-		<entry>builtin-fade</entry>
-	</suppressTransitionProfiles>
-	
-	<colorScheme name="default">
-        <label>Default</label>
-        <selectable>false</selectable>
-    </colorScheme>
+   <themeName>XMB Menu</themeName>
+
+   <!--
+   ///
+   Aspect Ratios
+   ///
+   -->
+   <aspectRatio>16:9</aspectRatio>
+   <aspectRatio>16:10</aspectRatio>
+   <aspectRatio>4:3</aspectRatio>
+   <aspectRatio>20:9</aspectRatio>
+
+   <!--
+   ///
+   Font Size
+   ///
+   -->
+   <fontSize>small</fontSize>
+   <fontSize>medium</fontSize>
+   <fontSize>large</fontSize>
+
+   <!--
+   ///
+   Color Schemes
+   ///
+   -->
+   <colorScheme name="blue">
+      <label>Blue</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="blue-video">
+      <label>Blue (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="violet">
+      <label>Violet</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="violet-video">
+      <label>Violet (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="lavender">
+      <label>Lavender</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="lavender-video">
+      <label>Lavender (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="pink">
+      <label>Pink</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="pink-video">
+      <label>Pink (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="baby-pink">
+      <label>Baby Pink</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="baby-pink-video">
+      <label>Baby Pink (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="hot-pink">
+      <label>Hot Pink</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="hot-pink-video">
+      <label>Hot Pink (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="red">
+      <label>Red</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="red-video">
+      <label>Red (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="orange">
+      <label>Orange</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="orange-video">
+      <label>Orange (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="yellow">
+      <label>Yellow</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="yellow-video">
+      <label>Yellow (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="lime-green">
+      <label>Lime Green</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="lime-green-video">
+      <label>Lime Green (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="mint-green">
+      <label>Mint Green</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="mint-green-video">
+      <label>Mint Green (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="light-gray">
+      <label>Light Gray</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="light-gray-video">
+      <label>Light Gray (Video Background)</label>
+      <selectable>true</selectable>
+   </colorScheme>
+   <colorScheme name="custom">
+      <label>Custom</label>
+      <selectable>true</selectable>
+   </colorScheme>
+
+   <!--
+   ///
+   Transitions
+   ///
+   -->
+   <transitions name="transitions">
+      <label>transitions</label>
+      <selectable>false</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>instant</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>instant</gamelistToSystem>
+      <startupToSystem>fade</startupToSystem>
+      <startupToGamelist>fade</startupToGamelist>
+   </transitions>
+   <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
+      <entry>builtin-slide</entry>
+      <entry>builtin-fade</entry>
+   </suppressTransitionProfiles>
+
+   <!--
+   ///
+   Variants
+   ///
+   -->
+   <variant name="gamelist-carousel-cover">
+      <label>Carousel: Boxart</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="gamelist-carousel-marquee">
+      <label>Carousel: Marquee</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="gamelist-carousel-titlescreen">
+      <label>Carousel: Title Screen</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="gamelist-carousel-physicalmedia">
+      <label>Carousel: Physical Media</label>
+      <selectable>true</selectable>
+   </variant>
     
 </themeCapabilities>

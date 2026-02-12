@@ -1,11 +1,8 @@
 <theme>
-    <include>./../theme.xml</include>
-
-    <variant name="all">
-        <view name="gamelist">
-            <text name="custom-title">
-                <metadata>systemFullname</metadata>
-            </text>
-        </view>
-    </variant>
+   <include>./../theme.xml</include>
+   <view name="system">
+      <text name="system-name">
+         <letterCase>capitalize</letterCase>
+      </text>
+   </view>
 </theme>
