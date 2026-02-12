@@ -1,0 +1,169 @@
+<!-- 
+4:3 aspect ratio
+based on 1080x1080
+-->
+<theme>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,gamelist">
+      <clock name="clock">
+         <pos>${statusBarXLPos} ${statsBarYTPos}</pos>
+         <fontSize>${statusBarHeight}</fontSize>
+      </clock>
+      <systemstatus name="system-status">
+         <pos>0.9861111 ${statsBarYTPos}</pos>
+         <height>${statusBarHeight}</height>
+         <textRelativeScale>0.9</textRelativeScale>
+         <entrySpacing>0.0231481</entrySpacing><!-- 25 -->
+      </systemstatus>
+      <helpsystem name="help-left,help-right">
+         <fontSize>${statusBarHeight}</fontSize>
+         <entryRelativeScale>0.9</entryRelativeScale>
+         <entrySpacing>0.0231481</entrySpacing><!-- 25 -->
+         <iconTextSpacing>0.0115741</iconTextSpacing><!-- 12.5 -->
+      </helpsystem>
+      <helpsystem name="help-left">
+         <pos>${statusBarXLPos} ${statsBarYBPos}</pos>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <pos>${statusBarXRPos} ${statsBarYBPos}</pos>
+      </helpsystem>
+      <image name="metadata-line">
+         <pos>0.42 0.5</pos>
+         <size>0.58 0.0037037</size>
+      </image>
+   </view>
+   <fontSize name="small,medium,large">
+      <variables>
+         <statusBarXLPos>0.0231481</statusBarXLPos><!-- 25 -->
+         <statusBarXRPos>0.9768519</statusBarXRPos><!-- 1055 -->
+         <statsBarYTPos>0.0231481</statsBarYTPos><!-- 25 -->
+         <statsBarYBPos>0.9768519</statsBarYBPos><!-- 1055 -->
+      </variables>
+   </fontSize>
+   <fontSize name="small">
+      <variables>
+         <statusBarHeight>0.0277778</statusBarHeight><!-- 30 -->
+      </variables>
+   </fontSize>
+   <fontSize name="medium">
+      <variables>
+         <statusBarHeight>0.037037</statusBarHeight><!-- 40 -->
+      </variables>
+   </fontSize>
+   <fontSize name="large">
+      <variables>
+         <statusBarHeight>0.0462963</statusBarHeight><!-- 50 -->
+      </variables>
+   </fontSize>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <carousel name="system-carousel">
+         <pos>0 0.1259259</pos><!-- 0 136 -->
+         <size>1 0.2314815</size><!-- 100% 250 -->
+         <itemSize>0.1444444 0.1925926</itemSize><!-- 208 208 -->
+         <itemScale>1.2</itemScale>
+         <horizontalOffset>-0.25</horizontalOffset>
+         <maxItemCount>4</maxItemCount>
+      </carousel>
+      <text name="system-name">
+         <pos>0.42 0.475</pos>
+         <size>0.58 0.059</size>
+         <fontSize>0.05</fontSize><!-- 54 -->
+         <lineSpacing>1.2</lineSpacing>
+         <container>true</container>
+         <containerType>horizontal</containerType>
+      </text>
+      <text name="system-count">
+         <pos>0.42 0.525</pos>
+         <size>0.58 0</size>
+         <fontSize>0.04</fontSize>
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <image name="system-content">
+         <pos>0.25 0.4916667</pos><!-- 576 531 -->
+         <maxSize>0.1736111 0.2314815</maxSize><!-- 250 250 -->
+      </image>
+      <helpsystem name="help-left">
+         <entries>start</entries>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <entries>a</entries>
+      </helpsystem>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="gamelist">
+      <carousel name="gamelist-carousel">
+         <pos>0.25 0</pos><!-- 576 0 -->
+         <size>1 1</size>
+         <itemSize>0.140 0.170</itemSize> 
+         <itemScale>1.9</itemScale>
+         <selectedItemMargins>0.04 0.04</selectedItemMargins>
+         <imageCornerRadius>0.005</imageCornerRadius>
+         <fontSize>0.0222222</fontSize><!-- 24 -->
+         <lineSpacing>1.2</lineSpacing>
+         <textBackgroundCornerRadius>0.005</textBackgroundCornerRadius>
+         <textRelativeScale>0.8</textRelativeScale>
+         <maxItemCount>5</maxItemCount>
+      </carousel>
+      <image name="back-arrow">
+         <pos>0.05 0.5</pos>
+         <maxSize>0.1 0.1</maxSize>
+      </image>
+      <video name="game-video">
+         <pos>0.25 0.5</pos>
+         <cropSize>0.28 0.33</cropSize> 
+      </video>
+      <text name="game-name">
+         <pos>0.42 0.475</pos>
+         <size>0.53 0</size>
+         <fontSize>0.05</fontSize><!-- 54 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <badges name="game-badges">
+         <pos>0.95 0.5</pos>
+         <size>1 0.06</size>
+      </badges>
+      <image name="game-players-icon">
+         <pos>0.42 0.525</pos>
+         <size>0.0407407 0.0407407</size><!-- 44 44 -->
+      </image>
+      <text name="game-players">
+         <pos>0.47 0.525</pos>
+         <fontSize>0.0333333</fontSize><!-- 36 -->
+         <size>0 0.0333333</size><!-- 0 36 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <image name="game-playtime-icon">
+         <pos>0.42 0.575</pos>
+         <size>0.0407407 0.0407407</size><!-- 44 44 -->
+      </image>
+      <text name="game-playtime">
+         <pos>0.47 0.575</pos>
+         <fontSize>0.0333333</fontSize><!-- 36 -->
+         <size>0 0.0333333</size><!-- 0 36 -->
+         <lineSpacing>1.2</lineSpacing>
+      </text>
+      <helpsystem name="help-left">
+         <scope>none</scope>
+      </helpsystem>
+      <helpsystem name="help-right">
+         <entries>a,b</entries>
+      </helpsystem>
+   </view>
+
+</theme>

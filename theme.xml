@@ -296,6 +296,9 @@ https://github.com/anthonycaccese/basic-xmb-es-de
    <aspectRatio name="4:3">
       <include>./4-3.xml</include>
    </aspectRatio>
+   <aspectRatio name="1:1">
+      <include>./1-1.xml</include>
+   </aspectRatio>
    <aspectRatio name="20:9">
       <include>./20-9.xml</include>
    </aspectRatio>
