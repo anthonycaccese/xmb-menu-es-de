@@ -5,8 +5,8 @@
       custom
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-blue.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-blue.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-blue.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-blue.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -14,8 +14,8 @@
       lime-green-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-lime-green.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-lime-green.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-lime-green.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-lime-green.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -23,8 +23,8 @@
       mint-green-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-mint-green.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-mint-green.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-mint-green.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-mint-green.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -32,8 +32,8 @@
       orange-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-orange.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-orange.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-orange.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-orange.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -41,8 +41,8 @@
       yellow-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-yellow.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-yellow.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-yellow.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-yellow.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -50,8 +50,8 @@
       pink-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-pink.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-pink.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-pink.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-pink.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -59,8 +59,8 @@
       baby-pink-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-baby-pink.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-baby-pink.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-baby-pink.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-baby-pink.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -68,8 +68,8 @@
       hot-pink-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-hot-pink.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-hot-pink.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-hot-pink.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-hot-pink.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -77,8 +77,8 @@
       red-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-red.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-red.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-red.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-red.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -86,8 +86,8 @@
       lavender-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-lavender.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-lavender.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-lavender.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-lavender.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -95,8 +95,8 @@
       violet-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-violet.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-violet-loop.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-violet.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-violet-loop.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -104,8 +104,8 @@
       light-gray-video
       ">
       <variables>
-         <backgroundImage>./_inc/backgrounds/waves-light-gray.png</backgroundImage>
-         <backgroundVideo>./_inc/backgrounds/waves-light-gray-loop.mp4</backgroundVideo>
+         <backgroundImagePath>./_inc/backgrounds/waves-light-gray.png</backgroundImagePath>
+         <backgroundVideoPath>./_inc/backgrounds/waves-light-gray-loop.mp4</backgroundVideoPath>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -125,8 +125,8 @@
       ">
       <variables>
          <showBackgroundVideo>false</showBackgroundVideo>
-         <showBackgroundGameArtSystem>false</showBackgroundGameArtSystem>
-         <showBackgroundGameArtGamelist>true</showBackgroundGameArtGamelist>
+         <showBackgroundGameArtSystemView>false</showBackgroundGameArtSystemView>
+         <showBackgroundGameArtGamelistView>true</showBackgroundGameArtGamelistView>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -145,8 +145,8 @@
       ">
       <variables>
          <showBackgroundVideo>true</showBackgroundVideo>
-         <showBackgroundGameArtSystem>false</showBackgroundGameArtSystem>
-         <showBackgroundGameArtGamelist>true</showBackgroundGameArtGamelist>
+         <showBackgroundGameArtSystemView>false</showBackgroundGameArtSystemView>
+         <showBackgroundGameArtGamelistView>true</showBackgroundGameArtGamelistView>
       </variables>
    </colorScheme>
    <colorScheme name="
@@ -181,9 +181,10 @@
          <textColor>ffffff</textColor>
          <lineColor>ffffff</lineColor>
          <backgroundImageTile>false</backgroundImageTile>
-         <backgroundImageColor>bbbbbb</backgroundImageColor>
-         <backgroundImageSaturation>1</backgroundImageSaturation>
-         <backgroundVideoColor>bbbbbb</backgroundVideoColor>
+         <backgroundColor>bbbbbb</backgroundColor>
+         <backgroundColorEnd>bbbbbb</backgroundColorEnd>
+         <backgroundGradientType>vertical</backgroundGradientType>
+         <backgroundSaturation>1</backgroundSaturation>
          <backgroundGameArtType>fanart</backgroundGameArtType>
          <backgroundGameArtSelector>lastplayed</backgroundGameArtSelector>
          <backgroundGameArtColor>555555</backgroundGameArtColor>

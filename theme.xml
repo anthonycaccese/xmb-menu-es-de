@@ -43,18 +43,23 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <origin>0 0</origin>
          <pos>0 0</pos>
          <cropSize>1 1</cropSize>
-         <path>${backgroundImage}</path>
+         <path>${backgroundImagePath}</path>
          <tile>${backgroundImageTile}</tile>
-         <color>${backgroundImageColor}</color>
-         <saturation>${backgroundImageSaturation}</saturation>
+         <color>${backgroundColor}</color>
+         <colorEnd>${backgroundColorEnd}</colorEnd>
+         <gradientType>${backgroundGradientType}</gradientType>
+         <saturation>${backgroundSaturation}</saturation>
          <zIndex>0</zIndex>
       </image>
       <video name="background-video">
          <origin>0 0</origin>
          <pos>0 0</pos>
          <cropSize>1 1</cropSize>
-         <path>${backgroundVideo}</path>
-         <color>${backgroundVideoColor}</color>
+         <path>${backgroundVideoPath}</path>
+         <color>${backgroundColor}</color>
+         <colorEnd>${backgroundColorEnd}</colorEnd>
+         <gradientType>${backgroundGradientType}</gradientType>
+         <saturation>${backgroundSaturation}</saturation>
          <fadeInTime>0</fadeInTime>
          <audio>false</audio>
          <zIndex>1</zIndex>
@@ -136,7 +141,7 @@ https://github.com/anthonycaccese/basic-xmb-es-de
       <image name="background-game-art">
          <imageType>${backgroundGameArtType}</imageType>
          <gameselector>background-game-art-selector</gameselector>
-         <visible>${showBackgroundGameArtSystem}</visible>
+         <visible>${showBackgroundGameArtSystemView}</visible>
       </image>
       <gameselector name="background-game-art-selector">
          <selection>${backgroundGameArtSelector}</selection>
@@ -180,7 +185,7 @@ https://github.com/anthonycaccese/basic-xmb-es-de
    <view name="gamelist">
       <image name="background-game-art">
          <imageType>${backgroundGameArtType}</imageType>
-         <visible>${showBackgroundGameArtGamelist}</visible>
+         <visible>${showBackgroundGameArtGamelistView}</visible>
       </image>
       <carousel name="gamelist-carousel">
          <origin>0.5 0</origin>
