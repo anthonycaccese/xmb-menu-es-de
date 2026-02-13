@@ -4,7 +4,7 @@ This is a translation of the PSP XMB menu for ES-DE. The xml and images were ori
 
 ## **Preview**
 
-![Preview](https://github.com/user-attachments/assets/fb811093-f3ea-4779-be32-f7d91a5e0130)
+![Preview](https://github.com/user-attachments/assets/77926f1b-1f0c-4a21-873a-b7191ce26c31)
 
 ## **Configuration Options**
 
@@ -18,9 +18,31 @@ This is a translation of the PSP XMB menu for ES-DE. The xml and images were ori
 - `Theme Font Size` - Sets the font size to use. I've included font sizes built to scale well from small handheld screens all the way up through larger tv screens.
 - `Theme Aspect Ratio` - Sets the aspect ratio that the theme will render at. This should happen automatically but if needed, this can be changed manually to match the aspect ratio of your screen.  16:9, 16:10, 4:3, 3:2, 8:7, 20:9 and 1:1 are supported
 
-### **1. Creating your own color scheme**
+### **Built-in Color Schemes**
 
-A custom color scheme lets you to modify any of the colors, artwork and logos used in the theme while also allowing you to continue to get updates from the theme downloader.
+<table>
+   <tr>
+      <td><img src="https://github.com/user-attachments/assets/77926f1b-1f0c-4a21-873a-b7191ce26c31"/></td>
+      <td><img src="https://github.com/user-attachments/assets/ad8b41a9-a561-41c9-b8eb-2751417640b8"/></td>
+      <td><img src="https://github.com/user-attachments/assets/f66de94a-09de-43e9-ae5e-e643b5f1ea60"/></td>
+   </tr>
+   <tr>
+      <td><img src="https://github.com/user-attachments/assets/bae1eb32-3ceb-4bd8-a5a9-d7cc85e5fe57"/></td>
+      <td><img src="https://github.com/user-attachments/assets/119dcf12-6b6f-448f-a173-398a7e8d7121"/></td>
+      <td><img src="https://github.com/user-attachments/assets/c48b276c-4e3a-499b-af8a-4f3182166f9f"/></td>
+   </tr>
+   <tr>
+      <td><img src="https://github.com/user-attachments/assets/7fa3187b-4330-4cce-bb3b-a1d390358037"/></td>
+      <td><img src="https://github.com/user-attachments/assets/ddca37a8-1538-45f7-9c60-85f16b7edbcb"/></td>
+      <td><img src="https://github.com/user-attachments/assets/6c906b31-1461-4a8d-b97b-b506723f6dca"/></td>
+   </tr>
+</table>
+
+## **Customizations**
+
+### **Creating your own color scheme**
+
+A custom color scheme lets you to modify any of the colors and backgrounds used in the theme while also allowing you to continue to get updates from the theme downloader.
 
 #### Instructions:
 
