@@ -1,6 +1,6 @@
 # XMB Menu for ES-DE
 
-This is a translation of the PSP XMB menu for ES-DE. The xml and images were originally built by InitialDin and this repository maintains their work so that it can be used with ES-DE's theme downloader.
+This is a translation of the PSP XMB menu for ES-DE. The xml and images were originally built by InitialDin and I've done a refactor to clean up image assets, add color scheme support, customizations and additional aspect ratios. This repository will maintain our shared work so that it can be used with ES-DE's theme downloader.
 
 ## **Preview**
 
