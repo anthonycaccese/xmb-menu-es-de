@@ -77,9 +77,11 @@ based on 1728x1080
       </carousel>
       <text name="system-name">
          <pos>0.39 0.475</pos>
-         <size>0.61 0</size>
+         <size>0.61 0.059</size>
          <fontSize>0.05</fontSize><!-- 54 -->
          <lineSpacing>1.2</lineSpacing>
+         <container>true</container>
+         <containerType>horizontal</containerType>
       </text>
       <text name="system-count">
          <pos>0.39 0.525</pos>
