@@ -1,6 +1,6 @@
 # XMB Menu for ES-DE
 
-This is a translation of the PSP XMB menu for ES-DE. The xml and images were originally built by InitialDin and I've done a refactor to clean up image assets, add color scheme support, customizations and additional aspect ratios. This repository will maintain our shared work so that it can be used with ES-DE's theme downloader.
+This is a translation of the PSP XMB menu for ES-DE. The xml was originally built by InitialDin and I've done a refactor to clean up image assets, add color scheme support, customizations and additional aspect ratios. This repository will maintain our shared work so that it can be used with ES-DE's theme downloader.
 
 ## **Preview**
 
@@ -74,7 +74,9 @@ A custom color scheme lets you to modify any of the colors and backgrounds used 
 ## **Credits:**
 
 - Inspired by the design of the Cross Media bar by Sony for the PSP &amp; PS3
-- The orignal XML and images for this theme were created by InitialDin
+- The orignal XML for this theme was created by InitialDin
+- System Controller Icons were sourced from @RobZombie9043 work in https://github.com/RobZombie9043/xmb-es-de- 
+- System Physical Media Icons were sourced from RetroArch's XMB monochrome theme in https://github.com/libretro/retroarch-assets/tree/master/xmb/monochrome
 
 ## **License**
 
