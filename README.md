@@ -75,7 +75,7 @@ A custom color scheme lets you to modify any of the colors and backgrounds used 
 
 - Inspired by the design of the Cross Media bar by Sony for the PSP &amp; PS3
 - The orignal XML for this theme was created by InitialDin
-- System Controller Icons were sourced from @RobZombie9043 work in https://github.com/RobZombie9043/xmb-es-de- 
+- System Controller Icons were sourced from [RobZombie9043](https://github.com/RobZombie9043) work in https://github.com/RobZombie9043/xmb-es-de
 - System Physical Media Icons were sourced from RetroArch's XMB monochrome theme in https://github.com/libretro/retroarch-assets/tree/master/xmb/monochrome
 
 ## **License**
