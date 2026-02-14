@@ -156,6 +156,8 @@
          <lineColor>ffffffaa</lineColor>
          <systemCarouselImagePath>./_inc/systems/controller</systemCarouselImagePath>
          <systemContentImagePath>./_inc/systems/physical-media</systemContentImagePath>
+         <systemCarouselImageColor>ffffff</systemCarouselImageColor>
+         <systemContentImageColor>ffffff</systemContentImageColor>
          <backgroundImagePath>./_inc/backgrounds/waves.png</backgroundImagePath>
          <backgroundVideoPath>./_inc/backgrounds/waves.mp4</backgroundVideoPath>
          <backgroundImageTile>false</backgroundImageTile>

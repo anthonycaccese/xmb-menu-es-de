@@ -7,7 +7,9 @@
          <lineColor>ffffff</lineColor>
          <!-- System Image Settings -->
          <systemCarouselImagePath>./_inc/systems/controller</systemCarouselImagePath>
+         <systemCarouselImageColor>ffffff</systemCarouselImageColor>
          <systemContentImagePath>./_inc/systems/physical-media</systemContentImagePath>
+         <systemContentImageColor>ffffff</systemContentImageColor>
          <!-- Static Background Settings -->
          <backgroundImagePath>./_inc/backgrounds/waves.png</backgroundImagePath>
          <backgroundVideoPath>./_inc/backgrounds/waves.mp4</backgroundVideoPath>

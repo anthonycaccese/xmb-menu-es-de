@@ -159,7 +159,7 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <type>horizontal</type>
          <defaultImage>${systemCarouselImagePath}/_default.png</defaultImage>
          <staticImage>${systemCarouselImagePath}/${system.theme}.png</staticImage>
-         <imageColor>${iconColor}</imageColor>
+         <imageColor>${systemCarouselImageColor}</imageColor>
          <unfocusedItemOpacity>0.9</unfocusedItemOpacity>
          <fastScrolling>true</fastScrolling>
          <color>00000000</color>
@@ -168,7 +168,7 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <origin>0.5 0.5</origin>
          <default>${systemContentImagePath}/_default.png</default>
          <path>${systemContentImagePath}/${system.theme}.png</path>
-         <color>${iconColor}</color>
+         <color>${systemContentImageColor}</color>
          <interpolation>linear</interpolation>
       </image>
       <text name="system-name">
@@ -228,7 +228,7 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <origin>0 1</origin>
          <metadata>sourceSystemFullname</metadata>
          <fontPath>${fontLight}</fontPath>
-         <color>${textColor}aa</color>
+         <color>${textColor}</color>
          <metadataElement>true</metadataElement>
       </text>
       <text name="game-name">
