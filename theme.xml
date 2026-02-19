@@ -140,6 +140,14 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <stationary>always</stationary>
          <zIndex>5</zIndex>
       </image>
+      <image name="metadata-line-shadow">
+         <origin>0 0.5</origin>
+         <path>${spacerImage}</path>
+         <color>00000066</color>
+         <metadataElement>true</metadataElement>
+         <stationary>always</stationary>
+         <zIndex>4</zIndex>
+      </image>
 	</view>
 
    <!--
@@ -173,18 +181,24 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <color>${systemContentImageColor}</color>
          <interpolation>linear</interpolation>
       </image>
-      <text name="system-name">
+      <text name="system-name,system-name-shadow">
          <origin>0 1</origin>
          <systemdata>fullname</systemdata>
          <fontPath>${fontBold}</fontPath>
-         <color>${textColor}</color>
+         <letterCase>capitalize</letterCase>
       </text>
-      <text name="system-count">
+      <text name="system-count,system-count-shadow">
          <origin>0 0</origin>
          <systemdata>gamecountGames</systemdata>
          <fontPath>${fontRegular}</fontPath>
-         <color>${textColor}</color>
          <letterCase>capitalize</letterCase>
+      </text>
+      <text name="system-name,system-count">
+         <color>${textColor}</color>
+      </text>
+      <text name="system-name-shadow,system-count-shadow">
+         <color>00000066</color>
+         <zIndex>4</zIndex>
       </text>
    </view>
 
@@ -234,13 +248,20 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <color>${textColor}</color>
          <metadataElement>true</metadataElement>
       </text>
-      <text name="game-name">
-         <origin>0 1</origin>
+      <text name="game-name,game-name-shadow">
          <metadata>name</metadata>
          <fontPath>${fontBold}</fontPath>
-         <color>${textColor}</color>
          <systemNameSuffix>false</systemNameSuffix>
+      </text>
+      <text name="game-name">
+         <origin>0 1</origin>
+         <color>${textColor}</color>
          <zIndex>50</zIndex>
+      </text>
+      <text name="game-name-shadow">
+         <origin>0 1</origin>
+         <color>00000066</color>
+         <zIndex>49</zIndex>
       </text>
       <badges name="game-badges">
          <origin>1 0</origin>
@@ -255,36 +276,60 @@ https://github.com/anthonycaccese/basic-xmb-es-de
          <customBadgeIcon badge="favorite">./_inc/images/badge-favorite.svg</customBadgeIcon>
          <customBadgeIcon badge="completed">./_inc/images/badge-completed.svg</customBadgeIcon>
       </badges>
-      <image name="game-players-icon">
+      <image name="game-players-icon,game-players-icon-shadow">
          <origin>0 0</origin>
          <path>./_inc/images/icon-players.svg</path>
-         <color>${iconColor}</color>
          <metadataElement>true</metadataElement>
+      </image>
+      <image name="game-players-icon">
+         <color>${iconColor}</color>
          <zIndex>50</zIndex>
       </image>
-      <text name="game-players">
+      <image name="game-players-icon-shadow">
+         <color>00000066</color>
+         <zIndex>49</zIndex>
+      </image>
+      <text name="game-players,game-players-shadow">
          <origin>0 0</origin>
          <metadata>players</metadata>
          <defaultValue>Unknown</defaultValue>
          <fontPath>${fontRegular}</fontPath>
+      </text>
+      <text name="game-players">
          <color>${textColor}</color>
          <zIndex>50</zIndex>
       </text>
-      <image name="game-playtime-icon">
+      <text name="game-players-shadow">
+         <color>00000066</color>
+         <zIndex>49</zIndex>
+      </text>
+      <image name="game-playtime-icon,game-playtime-icon-shadow">
          <origin>0 0</origin>
          <path>./_inc/images/icon-playtime.svg</path>
-         <color>${iconColor}</color>
          <metadataElement>true</metadataElement>
+      </image>
+      <image name="game-playtime-icon">
+         <color>${iconColor}</color>
          <zIndex>50</zIndex>
       </image>
-      <text name="game-playtime">
+      <image name="game-playtime-icon-shadow">
+         <color>00000066</color>
+         <zIndex>49</zIndex>
+      </image>
+      <text name="game-playtime,game-playtime-shadow">
          <origin>0 0</origin>
          <metadata>playtime</metadata>
          <defaultValue>Never Played</defaultValue>
          <fontPath>${fontRegular}</fontPath>
-         <color>${textColor}</color>
          <letterCase>capitalize</letterCase>
+      </text>
+      <text name="game-playtime">
+         <color>${textColor}</color>
          <zIndex>50</zIndex>
+      </text>
+      <text name="game-playtime-shadow">
+         <color>00000066</color>
+         <zIndex>49</zIndex>
       </text>
    </view>
    <variant name="gamelist-carousel-cover,gamelist-carousel-cover-marquee,gamelist-carousel-cover-fanart">

@@ -75,19 +75,29 @@ based on 1620x1080
          <horizontalOffset>-0.275</horizontalOffset>
          <maxItemCount>5</maxItemCount>
       </carousel>
-      <text name="system-name">
-         <pos>0.39 0.475</pos>
+      <text name="system-name,system-name-shadow">
          <size>0.61 0.059</size>
          <fontSize>0.05</fontSize><!-- 54 -->
          <lineSpacing>1.2</lineSpacing>
          <container>true</container>
          <containerType>horizontal</containerType>
       </text>
-      <text name="system-count">
-         <pos>0.39 0.525</pos>
+      <text name="system-name">
+         <pos>0.39 0.475</pos>
+      </text>
+      <text name="system-name-shadow">
+         <pos>0.39 0.478</pos>
+      </text>
+      <text name="system-count,system-count-shadow">
          <size>0.61 0</size>
          <fontSize>0.04</fontSize>
          <lineSpacing>1.2</lineSpacing>
+      </text>
+      <text name="system-count">
+         <pos>0.39 0.525</pos>
+      </text>
+      <text name="system-count-shadow">
+         <pos>0.39 0.528</pos>
       </text>
       <image name="system-content">
          <pos>0.225 0.4916667</pos><!-- 576 531 -->
@@ -134,13 +144,18 @@ based on 1620x1080
          <fontSize>0.025</fontSize>
          <lineSpacing>1.2</lineSpacing>
       </text>
-      <text name="game-name">
-         <pos>0.39 0.475</pos>
+      <text name="game-name,game-name-shadow">
          <size>0.61 0.059</size>
          <fontSize>0.05</fontSize><!-- 54 -->
          <lineSpacing>1.2</lineSpacing>
          <container>true</container>
          <containerType>horizontal</containerType>
+      </text>
+      <text name="game-name">
+         <pos>0.39 0.475</pos>
+      </text>
+      <text name="game-name-shadow">
+         <pos>0.39 0.478</pos>
       </text>
       <badges name="game-badges">
          <pos>0.95 0.5</pos>
@@ -150,21 +165,39 @@ based on 1620x1080
          <pos>0.39 0.525</pos>
          <maxSize>0.0271605 0.0407407</maxSize><!-- 44 44 -->
       </image>
-      <text name="game-playtime">
-         <pos>0.43 0.525</pos>
+      <image name="game-playtime-icon-shadow">
+         <pos>0.39 0.528</pos>
+         <maxSize>0.0271605 0.0407407</maxSize><!-- 44 44 -->
+      </image>
+      <text name="game-playtime,game-playtime-shadow">
          <fontSize>0.0333333</fontSize><!-- 36 -->
          <size>0 0.0333333</size><!-- 0 36 -->
          <lineSpacing>1.2</lineSpacing>
+      </text>
+      <text name="game-playtime">
+         <pos>0.43 0.525</pos>
+      </text>
+      <text name="game-playtime-shadow">
+         <pos>0.43 0.528</pos>
       </text>
       <image name="game-players-icon">
          <pos>0.39 0.575</pos>
          <maxSize>0.0271605 0.0407407</maxSize><!-- 44 44 -->
       </image>
-      <text name="game-players">
-         <pos>0.43 0.575</pos>
+      <image name="game-players-icon-shadow">
+         <pos>0.39 0.578</pos>
+         <maxSize>0.0271605 0.0407407</maxSize><!-- 44 44 -->
+      </image>
+      <text name="game-players,game-players-shadow">
          <fontSize>0.0333333</fontSize><!-- 36 -->
          <size>0 0.0333333</size><!-- 0 36 -->
          <lineSpacing>1.2</lineSpacing>
+      </text>
+      <text name="game-players">
+         <pos>0.43 0.575</pos>
+      </text>
+      <text name="game-players-shadow">
+         <pos>0.43 0.578</pos>
       </text>
       <helpsystem name="help-left">
          <entries>b</entries>
